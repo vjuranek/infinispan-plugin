@@ -20,6 +20,15 @@
         </license>
     </licenses>
 
+    <dependencies>
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+
     <repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>
