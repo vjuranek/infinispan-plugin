@@ -20,11 +20,22 @@
         </license>
     </licenses>
 
+    <properties>
+        <version.javax.cache>1.0.0</version.javax.cache>
+        <version.org.infinispan>7.0.3.Final</version.org.infinispan>
+    </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>javax.cache</groupId>
             <artifactId>cache-api</artifactId>
-            <version>1.0.0</version>
+            <version>${version.javax.cache}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-embedded</artifactId>
+            <version>${version.org.infinispan}</version>
         </dependency>
     </dependencies>
 
@@ -33,6 +44,11 @@
         <repository>
             <id>repo.jenkins-ci.org</id>
             <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
         </repository>
     </repositories>
     <pluginRepositories>
