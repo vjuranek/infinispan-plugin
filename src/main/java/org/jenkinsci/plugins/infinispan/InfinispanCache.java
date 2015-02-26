@@ -8,6 +8,8 @@ import javax.cache.CacheManager;
 
 import org.infinispan.jcache.JCacheManager;
 import org.infinispan.manager.DefaultCacheManager;
+import org.jenkinsci.plugins.jcache.JCache;
+import org.jenkinsci.plugins.jcache.JCacheDescriptor;
 
 public class InfinispanCache extends JCache {
 
